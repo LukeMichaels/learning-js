@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title></title>
+	
+	<script type="text/javascript">
+		function touchWalter() {
+			var userResponse = prompt("What should you mark it?");
+			
+			if (userResponse == "0"){	
+				alert("...It's a league game");
+				document.getElementById("walterImg").src = "images/walter-1.jpg";
+			}
+			else if (userResponse == "zero"){
+				alert("...It's a league game");
+				document.getElementById("walterImg").src = "images/walter-1.jpg";
+			}
+			else {
+				alert("My friend, you are entering a world of pain.");
+				document.getElementById("walterImg").src = "images/walter-3.jpg";
+			}
+		}
+	</script>
+	
+</head>
+<body onload="alert('Over the line!');">
+	<img id="walterImg" src="images/walter-2.jpg" alt="Over The Line!"  style=
+			"cursor: pointer;" onclick="touchWalter()" />
+</body>
+</html>
