@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fun with Arrays</title>
+<script>
+	var names = ["Luke","Kari","Juno","Garrett","Tyler"];
+</script>
+</head>
+<body>
+
+	<script>
+	
+		document.write('<p>' + names[0] + '</p>');
+		document.write('<p>' + names[names.length-1] + '</p>');
+		document.write('<p>' + names[3] + '</p>');
+		document.write('<p>' + names[names.length-3] + '</p>');
+		names[names.length] = 'Leopold';
+		document.write('<p>' + names[names.length] + '</p>');
+		names.push('Joe');
+		document.write('<p>' + names[6] + '</p>');
+		names.push('Merri, Dan, John Stamos');
+		names.unshift('first');
+		document.write('<p>' + names[0] + '</p>');
+		
+	</script>
+
+</body>
+</html>
